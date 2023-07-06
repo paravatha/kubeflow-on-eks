@@ -15,7 +15,7 @@ managedNodeGroups:
   - name: managed-ng-t2
     instanceType: t2.medium
     minSize: 2
-    desiredCapacity: 3
+    desiredCapacity: 2
     maxSize: 4
     volumeSize: 20
     labels: {ng: managed-ng-t2}
@@ -26,7 +26,7 @@ managedNodeGroups:
   - name: managed-ng-t3
     instanceType: t3.medium
     minSize: 2
-    desiredCapacity: 3
+    desiredCapacity: 2
     maxSize: 4
     volumeSize: 20
     labels: {ng: managed-ng-t3}
