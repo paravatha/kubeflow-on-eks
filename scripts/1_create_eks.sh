@@ -10,7 +10,9 @@ git checkout ${AWS_RELEASE_VERSION}
 git clone --branch ${KUBEFLOW_RELEASE_VERSION} https://github.com/kubeflow/manifests.git upstream
 make install-tools
 
-eksctl create cluster --name ${CLUSTER_NAME} --version 1.25 \
-  --region ${CLUSTER_REGION} --nodegroup-name linux-nodes \
-  --node-type t3.medium --nodes 0 --nodes-min 0 --nodes-max 5 \
-  --managed --with-oidc
+eksctl create cluster -f config/cluster.yaml
+
+#eksctl create cluster --name ${CLUSTER_NAME} --version 1.25 \
+#  --region ${CLUSTER_REGION} --nodegroup-name linux-nodes \
+#  --node-type t3.medium --nodes 0 --nodes-min 0 --nodes-max 5 \
+#  --managed --with-oidc
