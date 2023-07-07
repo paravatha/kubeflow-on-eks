@@ -2,7 +2,7 @@ export AWS_PROFILE=kubeflow
 export CLUSTER_NAME=kubeflow
 export CLUSTER_REGION=us-east-1
 
-eksctl create cluster -f config/cluster.yaml
+eksctl delete cluster -f config/cluster.yaml
 
 #eksctl create cluster --name ${CLUSTER_NAME} --version 1.25 \
 #  --region ${CLUSTER_REGION} --nodegroup-name linux-nodes \
