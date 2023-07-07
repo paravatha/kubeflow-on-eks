@@ -1,7 +1,8 @@
 export AWS_PROFILE=kubeflow
 export CLUSTER_NAME=kubeflow
 export CLUSTER_REGION=us-east-1
-
+https://github.com/paravatha/kubeflow-on-eks
+cd kubeflow-on-eks
 eksctl create cluster -f config/cluster.yaml
 
 #eksctl create cluster --name ${CLUSTER_NAME} --version 1.25 \
