@@ -1,3 +1,8 @@
+alias c=clear
+alias gs="git status "
+alias gpl="git pull "
+alias gps="git push "
+
 kubectl version
 
 echo 'alias k=kubectl' >>~/.bashrc
