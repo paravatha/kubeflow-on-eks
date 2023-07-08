@@ -1,3 +1,4 @@
+export AWS_PROFILE=kubeflow
 export CLUSTER_NAME=kubeflow
 export CLUSTER_REGION=us-east-1
 export KUBEFLOW_RELEASE_VERSION=v1.7.0

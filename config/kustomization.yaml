@@ -50,8 +50,8 @@ resources:
   - ../../upstream/common/user-namespace/base
 
   # KServe
-  #- ../../awsconfigs/apps/kserve
-  #- ../../upstream/contrib/kserve/models-web-app/overlays/kubeflow
+  - ../../awsconfigs/apps/kserve
+  - ../../upstream/contrib/kserve/models-web-app/overlays/kubeflow
 
   # ACK Sagemaker
   #- ../../awsconfigs/common/ack-sagemaker-controller
