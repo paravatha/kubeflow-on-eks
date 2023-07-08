@@ -1,8 +1,8 @@
 kubectl version
 
-echo -e "\nalias gs='git status '" >> .bashrc
-echo -e "\nalias gpl='git pull '" >> .bashrc
-echo -e "\nalias gps='git push '" >> .bashrc
+echo -e "\nalias gs='git status '" >> ~/.bashrc
+echo -e "\nalias gpl='git pull '" >> ~/.bashrc
+echo -e "\nalias gps='git push '" >> ~/.bashrc
 
 echo 'alias c=clear' >>~/.bashrc
 echo 'alias k=kubectl' >>~/.bashrc
