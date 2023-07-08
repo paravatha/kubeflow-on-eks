@@ -1,10 +1,10 @@
-alias c=clear
-alias gs="git status "
-alias gpl="git pull "
-alias gps="git push "
-
 kubectl version
 
+echo -e "\nalias gs='git status '" >> .bashrc
+echo -e "\nalias gpl='git pull '" >> .bashrc
+echo -e "\nalias gps='git push '" >> .bashrc
+
+echo 'alias c=clear' >>~/.bashrc
 echo 'alias k=kubectl' >>~/.bashrc
 echo 'complete -o default -F __start_kubectl k' >>~/.bashrc
 
