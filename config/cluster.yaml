@@ -7,7 +7,9 @@ metadata:
   name: kubeflow
   region: us-east-1
   version: "1.25"
-
+  tags:
+    usage: kubeflow
+    team: mlops
 iam:
   withOIDC: true
 
@@ -21,6 +23,7 @@ managedNodeGroups:
     labels: {ng: managed-ng-t2}
     tags:
       usage : kubeflow
+      team: mlops
       nodegroup-role: managed-ng-t2
 
   - name: managed-ng-t3
@@ -32,16 +35,29 @@ managedNodeGroups:
     labels: {ng: managed-ng-t3}
     tags:
       usage: kubeflow
+      team: mlops
       nodegroup-role: managed-ng-t3
 
 addons:
   - name: vpc-cni # no version is specified so it deploys the default version
     attachPolicyARNs:
       - arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy
+    tags:
+      usage: kubeflow
+      team: mlops
   - name: coredns
     version: latest # auto discovers the latest available
+    tags:
+      usage: kubeflow
+      team: mlops
   - name: kube-proxy
     version: latest
+    tags:
+      usage: kubeflow
+      team: mlops
   - name: aws-ebs-csi-driver
     wellKnownPolicies:      # add IAM and service account
       ebsCSIController: true
+    tags:
+      usage: kubeflow
+      team: mlops
