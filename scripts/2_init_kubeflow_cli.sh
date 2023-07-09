@@ -9,4 +9,4 @@ git checkout ${AWS_RELEASE_VERSION}
 git clone --branch ${KUBEFLOW_RELEASE_VERSION} https://github.com/kubeflow/manifests.git upstream
 make install-tools
 
-eksctl scale nodegroup --cluster=${CLUSTER_NAME} --nodes=4 linux-nodes --wait
+#eksctl scale nodegroup --cluster=${CLUSTER_NAME} --nodes=4 linux-nodes --wait

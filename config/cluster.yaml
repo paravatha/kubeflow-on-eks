@@ -16,10 +16,10 @@ iam:
 managedNodeGroups:
   - name: managed-ng-t2
     instanceType: t2.medium
-    minSize: 1
-    desiredCapacity: 1
+    minSize: 2
+    desiredCapacity: 2
     maxSize: 3
-    volumeSize: 10
+    volumeSize: 20
     labels: {ng: managed-ng-t2}
     tags:
       usage : kubeflow
@@ -28,10 +28,10 @@ managedNodeGroups:
 
   - name: managed-ng-t3
     instanceType: t3.medium
-    minSize: 1
-    desiredCapacity: 1
+    minSize: 2
+    desiredCapacity: 2
     maxSize: 3
-    volumeSize: 10
+    volumeSize: 20
     labels: {ng: managed-ng-t3}
     tags:
       usage: kubeflow
