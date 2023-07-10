@@ -1,4 +1,4 @@
-#export AWS_PROFILE=kubeflow
+export AWS_PROFILE=kubeflow
 export CLUSTER_NAME=kubeflow
 export CLUSTER_REGION=us-east-1
 eksctl scale nodegroup --cluster=${CLUSTER_NAME} --nodes=0 managed-ng-t2
