@@ -1,5 +1,4 @@
-cp config/aws_config ~/.aws/config
-
+export AWS_PROFILE=kubeflow
 export CLUSTER_NAME=kubeflow
 export CLUSTER_REGION=us-east-1
 

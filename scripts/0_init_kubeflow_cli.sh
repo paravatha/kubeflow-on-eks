@@ -15,5 +15,7 @@ pwd
 
 cat ../config/bashrc >> ~/.bashrc
 source ~/.bashrc
+cp config/aws_config ~/.aws/config
+
 
 #eksctl scale nodegroup --cluster=${CLUSTER_NAME} --nodes=4 linux-nodes --wait
