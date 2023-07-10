@@ -9,4 +9,11 @@ git checkout ${AWS_RELEASE_VERSION}
 git clone --branch ${KUBEFLOW_RELEASE_VERSION} https://github.com/kubeflow/manifests.git upstream
 make install-tools
 
+kubectl version
+eksctl version
+
+echo 'source <(kubectl completion bash)' >>~/.bashrc
+echo 'alias k=kubectl' >>~/.bashrc
+echo 'complete -o default -F __start_kubectl k' >>~/.bashrc
+
 #eksctl scale nodegroup --cluster=${CLUSTER_NAME} --nodes=4 linux-nodes --wait
