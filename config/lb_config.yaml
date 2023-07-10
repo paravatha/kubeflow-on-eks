@@ -6,7 +6,7 @@ kubeflow:
     scheme: internet-facing
 route53:
   rootDomain:
-    hostedZoneId: Z05207741CGXISAU5R2V9
-    name: cmcloudlab1747.info
+    hostedZoneId: Z04585768MD2C7VY6ET6
+    name: cmcloudlab614.info
   subDomain:
-    name: platform.cmcloudlab1747.info
+    name: platform.cmcloudlab614.info
