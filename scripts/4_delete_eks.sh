@@ -1,8 +1,9 @@
 export AWS_PROFILE=kubeflow
 export CLUSTER_NAME=kubeflow
 export CLUSTER_REGION=us-east-1
-eksctl scale nodegroup --cluster=${CLUSTER_NAME} --nodes=0 managed-ng-t2
-eksctl scale nodegroup --cluster=${CLUSTER_NAME} --nodes=0 managed-ng-t3
+
+eksctl delete nodegroup --cluster ${CLUSTER_NAME} --region ${CLUSTER_REGION} --name managed-ng-t3
+eksctl delete nodegroup --cluster ${CLUSTER_NAME} --region ${CLUSTER_REGION} --name managed-ng-t2
 
 eksctl delete cluster -f config/cluster.yaml
 
