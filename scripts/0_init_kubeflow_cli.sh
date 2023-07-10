@@ -11,6 +11,9 @@ make install-tools
 
 kubectl version
 eksctl version
-cat config/bashrc >> ~/.bashrc
+pwd
+
+cat ../config/bashrc >> ~/.bashrc
 source ~/.bashrc
+
 #eksctl scale nodegroup --cluster=${CLUSTER_NAME} --nodes=4 linux-nodes --wait
