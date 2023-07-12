@@ -50,3 +50,10 @@ DELETE
 # Check if there any external IP svc
 kubectl get svc --all-namespaces
 eksctl delete cluster --name kf-test
+
+#eksctl scale nodegroup --cluster=${CLUSTER_NAME} --nodes=4 linux-nodes --wait
+
+#eksctl create cluster --name ${CLUSTER_NAME} --version 1.25 \
+#  --region ${CLUSTER_REGION} --nodegroup-name linux-nodes \
+#  --node-type t3.medium --nodes 0 --nodes-min 0 --nodes-max 5 \
+#  --managed --with-oidc

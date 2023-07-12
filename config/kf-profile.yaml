@@ -1,0 +1,9 @@
+apiVersion: kubeflow.org/v1
+kind: Profile
+metadata:
+  name: test-user
+  namespace: kubeflow
+spec:
+  owner:
+    kind: User
+    name: paravatha@gmail.com
