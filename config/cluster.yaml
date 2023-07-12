@@ -12,7 +12,7 @@ metadata:
     team: mlops
 vpc:
   clusterEndpoints:
-    publicAccess:  false
+    publicAccess:  true
     privateAccess: true
 iam:
   withOIDC: true
