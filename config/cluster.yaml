@@ -20,8 +20,8 @@ iam:
 managedNodeGroups:
   - name: managed-ng-t2
     instanceType: t2.medium
-    minSize: 1
-    desiredCapacity: 1
+    minSize: 2
+    desiredCapacity: 2
     maxSize: 3
     volumeSize: 20
     privateNetworking: true
@@ -33,8 +33,8 @@ managedNodeGroups:
 
   - name: managed-ng-t3
     instanceType: t3.medium
-    minSize: 1
-    desiredCapacity: 1
+    minSize: 2
+    desiredCapacity: 2
     maxSize: 3
     volumeSize: 20
     privateNetworking: true
