@@ -10,6 +10,10 @@ metadata:
   tags:
     usage: kubeflow
     team: mlops
+vpc:
+  clusterEndpoints:
+    publicAccess:  false
+    privateAccess: true
 iam:
   withOIDC: true
 
@@ -20,6 +24,7 @@ managedNodeGroups:
     desiredCapacity: 1
     maxSize: 3
     volumeSize: 20
+    privateNetworking: true
     labels: {ng: managed-ng-t2}
     tags:
       usage : kubeflow
@@ -32,6 +37,7 @@ managedNodeGroups:
     desiredCapacity: 1
     maxSize: 3
     volumeSize: 20
+    privateNetworking: true
     labels: {ng: managed-ng-t3}
     tags:
       usage: kubeflow
