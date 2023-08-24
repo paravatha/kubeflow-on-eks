@@ -7,3 +7,6 @@ export AWS_RELEASE_VERSION=v1.7.0-aws-b1.0.2
 git clone https://github.com/awslabs/kubeflow-manifests.git && cd kubeflow-manifests
 git checkout ${AWS_RELEASE_VERSION}
 git clone --branch ${KUBEFLOW_RELEASE_VERSION} https://github.com/kubeflow/manifests.git upstream
+
+git remote -v
+git remote rm origin
