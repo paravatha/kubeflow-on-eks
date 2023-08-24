@@ -10,4 +10,3 @@ export LOAD_BALANCER_SCHEME=internet-facing
 
 terraform init && terraform plan
 make deploy
-
