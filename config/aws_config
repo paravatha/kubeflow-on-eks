@@ -1,5 +1,5 @@
 [profile kubeflow]
-aws_access_key_id=
-aws_secret_access_key=
+aws_access_key_id=AKIA3OUIWJR7A2S2CLEJ
+aws_secret_access_key=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
 region=us-east-1
 output=json
